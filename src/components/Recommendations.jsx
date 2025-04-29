@@ -1,7 +1,7 @@
 // src/components/Recommendations.jsx
 import James from "../assets/img/James-gouse.webp"; // Placeholder for James Gouse
 import Tiana from "../assets/img/Tiana-philips.jpeg"; // Placeholder for Tiana Philips
-import Talan from "../assets/img/Talan-Westervelt.webp"; // Placeholder for Talan Westervelt
+import Talan from "../assets/img/Talan-westervelt.webp"; // Placeholder for Talan Westervelt
 
 const Recommendations = ({ testimonials = [] }) => {
   // Default testimonials if none are provided via props
