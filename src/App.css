@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins:wght@700;800&display=swap');
+@import "tailwindcss";
+
+/* Define the dark variant */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Define light and dark mode variables */
+:root {
+  /* Light mode */
+  --background: #fff  ; /* bg-white */
+  --text: #1a202c; /* text-gray-900 */
+  --card-bg: #ffffff; /* bg-white */
+  --card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  --background-2:#f0f0f6;
+  --sidebar-hover: #ffb400;
+}
+
+.dark {
+  /* Dark mode */
+  --background: #262d3a; /* bg-gray-900 */
+  --text: #e2e8f0; /* text-gray-200 */
+  --card-bg: #2d3748; /* bg-gray-800 */
+  --card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+  --background-2: #2d3748;
+  --sidebar-hover: #e2e8f0;
+}
+
+/* Apply variables */
+body {
+  background-color: var(--background);
+  color: var(--text);
+}
+
+section {
+  background-color: var(--background);
+}
+
+.bg-white {
+  background-color: var(--card-bg);
+  box-shadow: var(--card-shadow);
+}
+
+.text-gray-900 {
+  color: var(--text);
+}
+
+.text-gray-600 {
+  color: var(--text);
+  opacity: 0.8;
+}
+
+.navbar, .sidebar {
+  background-color: var(--card-bg);
+}
+
+h1, h2, h3, h4{
+font-family: 'Poppins', sans-serif;  font-weight: 400;
+  font-style: normal;
+}
+
+
+.inter {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.sidebar::-webkit-scrollbar {
+  width: 3px;
+}
+.sidebar::-webkit-scrollbar-track {
+  background-color: var(--background-2);
+}
+.sidebar::-webkit-scrollbar-thumb {
+  background-color: var(--background);
+  border-radius: 4px;
+}
+.sidebar::-webkit-scrollbar-thumb:hover {
+  background: var(--sidebar-hover);
+}
+
