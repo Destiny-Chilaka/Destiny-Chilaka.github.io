@@ -1,4 +1,4 @@
-import { FaFacebook, FaLinkedin } from "react-icons/fa";
+import { FaFacebook, FaLinkedin, FaGithub } from "react-icons/fa";
 import extraSkillIcon from "../assets/img/extra-skill-icon.png";
 import "../App.css";
 
@@ -35,16 +35,22 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
               <FaFacebook size={16} className="text-[#2b2b2b]" />
             </a>
             <a
-              href="#"
+              href="https://x.com/Destiny_Chilaka"
               className="w-8 h-8 bg-[#FFB400] rounded-full flex items-center justify-center hover:bg-orange-300 transition-colors"
             >
               <i class="fa-brands fa-square-x-twitter text-[#2b2b2b]"></i>
             </a>
             <a
-              href="#"
+              href="in/destiny-chilaka-4ab30725b"
               className="w-8 h-8 bg-[#FFB400] rounded-full flex items-center justify-center hover:bg-orange-300 transition-colors"
             >
               <FaLinkedin size={16} className="text-[#2b2b2b]" />
+            </a>
+            <a
+              href="https://github.com/Destiny-Chilaka"
+              className="w-8 h-8 bg-[#FFB400] rounded-full flex items-center justify-center hover:bg-orange-300 transition-colors"
+            >
+              <FaGithub size={16} className="text-[#2b2b2b]" />
             </a>
           </div>
         </div>
