@@ -1,5 +1,6 @@
 import { FaFacebook, FaLinkedin, FaGithub } from "react-icons/fa";
 import extraSkillIcon from "../assets/img/extra-skill-icon.png";
+import profilePic from "../assets/img/profile-pic.jpg";
 import "../App.css";
 
 const Sidebar = ({ isOpen, toggleSidebar }) => {
@@ -22,7 +23,11 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
       >
         {/* Profile Section */}
         <div className="text-center">
-          <div className="w-48 h-48 rounded-full bg-[url('/src/assets/img/profile-pic.jpg')] bg-cover bg-top mx-auto"></div>
+          <div
+            className="w-48 h-48 rounded-full bg-cover bg-top mx-auto
+          "
+            style={{ backgroundImage: `url(${profilePic})` }}
+          ></div>
           <h2 className="text-lg font-semibold text-[#2b2b2b] dark:text-[#e2e8f0]">
             Chilaka Destiny
           </h2>
