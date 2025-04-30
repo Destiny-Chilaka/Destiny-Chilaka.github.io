@@ -1,4 +1,5 @@
 import { useState } from "react";
+import react from "react";
 
 const Footer = () => {
 <section id="footer" className="p-8 flex justify-center items-center">
