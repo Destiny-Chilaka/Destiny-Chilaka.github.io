@@ -1,31 +1,15 @@
 // src/components/Recommendations.jsx
-import James from "../assets/img/James-gouse.webp"; // Placeholder for James Gouse
-import Tiana from "../assets/img/Tiana-philips.jpeg"; // Placeholder for Tiana Philips
-import Talan from "../assets/img/Talan-westervelt.webp"; // Placeholder for Talan Westervelt
+import Jackson from "../assets/img/Richard-Jackson.jpg"; // Placeholder for James Gouse
 
 const Recommendations = ({ testimonials = [] }) => {
   // Default testimonials if none are provided via props
   const defaultTestimonials = [
     {
-      quote: "Great Quality!",
-      text: "Destiny delivered an exceptional website for my design portfolio. His attention to detail and creativity exceeded my expectations.",
-      name: "James Gouse",
-      role: "Graphic Designer",
-      avatar: James,
-    },
-    {
-      quote: "Amazing Work!",
-      text: "The copywriting for my marketing campaign was spot on. Chilaka's words truly captured my brand’s voice.",
-      name: "Tiana Philips",
-      role: "Photographer",
-      avatar: Tiana,
-    },
-    {
-      quote: "Great Quality!",
-      text: "Chilaka's advertising strategies boosted my business’s visibility. The social media ads were highly effective and well-executed.",
-      name: "Talan Westervelt",
-      role: "Business Man",
-      avatar: Talan,
+      quote: "Wonderful Work!",
+      text: "Chilaka is a great developer. He's someone everyone should have on their team. He is dedicated, pays attention to details and gives an excellent work. It's been amazing working with him.",
+      name: "Richard Jackson",
+      role: "Frontend Developer",
+      avatar: Jackson,
     },
   ];
 
@@ -44,15 +28,15 @@ const Recommendations = ({ testimonials = [] }) => {
         </p>
 
         {/* Testimonial Cards */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-8">
+        <div className="flex justify-center items-center  mt-8">
           {data.map((testimonial, index) => (
             <div
               key={index}
-              className="bg-white p-6 text-center w-full rounded-lg shadow-md"
+              className="bg-white p-6 text-center w-full rounded-lg shadow-md max-w-xl"
             >
               {/* Star Rating */}
-              <div className="flex justify-center mb-4">
-                {[...Array(5)].map((_, i) => (
+              <div className="flex justify-center items-center mb-4">
+                {[...Array(4)].map((_, i) => (
                   <svg
                     key={i}
                     className="w-5 h-5 text-[#ffb400]"

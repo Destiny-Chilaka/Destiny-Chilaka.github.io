@@ -238,6 +238,15 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
             </p>
           </div>
         </div>
+        <div className="flex justify-center my-4 w-full">
+          <a
+            href="/public/cv.pdf"
+            download = "Destiny Chilaka- Frontend Developer"
+            className="bg-[#FFB400] text-[#2b2b2b] px-6 py-2 rounded font-semibold shadow hover:bg-orange-300 transition-colors"
+          >
+            Download CV
+          </a>
+        </div>
       </aside>
 
       {/* Overlay for Mobile (when sidebar is open) */}
