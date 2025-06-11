@@ -71,7 +71,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
           </p>
           <p>
             <span className="font-semibold">Freelance:</span>{" "}
-            <span className="text-green-600 dark:text-blue-400 ">
+            <span className="text-green-600 rounded-2xl">
               Available
             </span>
           </p>
@@ -241,7 +241,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
         <div className="flex justify-center my-4 w-full">
           <a
             href="/public/cv.pdf"
-            download = "Destiny Chilaka- Frontend Developer"
+            download="Destiny Chilaka- Frontend Developer"
             className="bg-[#FFB400] text-[#2b2b2b] px-6 py-2 rounded font-semibold shadow hover:bg-orange-300 transition-colors"
           >
             Download CV

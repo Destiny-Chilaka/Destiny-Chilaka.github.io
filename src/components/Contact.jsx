@@ -68,7 +68,7 @@ const Contact = () => {
 
           <div>
             <h4 className="text-2xl font-semibold text-gray-900 mb-4">
-              Leave Us Your Info
+               Your Information
             </h4>
             <div className="bg-white p-6 ">
               <form onSubmit={handleSubmit} className="space-y-4">
@@ -86,7 +86,7 @@ const Contact = () => {
                     value={formData.name}
                     onChange={handleChange}
                     required
-                    className="mt-1 block w-full p-3 bg-gray-100 focus:outline-1 focus:outline-blue-500  dark:text-black/60"
+                    className="mt-1 block w-full p-3 bg-gray-100 focus:outline-1 focus:outline-[#ffb400]  dark:text-black/60"
                   />
                 </div>
                 <div>
@@ -103,7 +103,7 @@ const Contact = () => {
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className="mt-1 block w-full p-3 bg-gray-100 focus:outline-1 focus:outline-blue-500  dark:text-black/60"
+                    className="mt-1 block w-full p-3 bg-gray-100 focus:outline-1 focus:outline-[#ffb400]  dark:text-black/60"
                   />
                 </div>
                 <div>
@@ -119,7 +119,7 @@ const Contact = () => {
                     name="subject"
                     value={formData.subject}
                     onChange={handleChange}
-                    className="mt-1 block w-full p-3 bg-gray-100 focus:outline-1 focus:outline-blue-500  dark:text-black/60"
+                    className="mt-1 block w-full p-3 bg-gray-100 focus:outline-1 focus:outline-[#ffb400]  dark:text-black/60"
                   />
                 </div>
                 <div>
@@ -135,15 +135,17 @@ const Contact = () => {
                     value={formData.message}
                     onChange={handleChange}
                     rows="4"
-                    className="mt-1 block w-full p-3 bg-gray-100 focus:outline-1 focus:outline-blue-500  dark:text-black/60"
+                    className="mt-1 block w-full p-3 bg-gray-100 focus:outline-1 focus:outline-[#ffb400]  dark:text-black/60"
                   ></textarea>
                 </div>
-                <button
-                  type="submit"
-                  className="w-full bg-blue-500 text-black py-3 px-4  hover:bg-blue-400 transition-colors cursor-pointer "
-                >
-                  Send Message
-                </button>
+                <div className="text-center">
+                  <button
+                    type="submit"
+                    className="w-60 mx-auto bg-[#ffcc67] text-black py-3 px-4  hover:bg-orange-300 transition-colors cursor-pointer rounded-lg "
+                  >
+                    Send Message
+                  </button>
+                </div>
               </form>
             </div>
           </div>
@@ -156,12 +158,14 @@ const Contact = () => {
             <div className="space-y-4">
               <div className=" max-w-[250px]  sm:max-w-xs bg-white p-3 sm:p-5 shadow-2xl">
                 <div className=" flex justify-center items-center mb-5">
-                  <div className="w-9 h-9 bg-blue-500 rounded-full flex items-center justify-center mr-3">
-                    <FaMapMarkerAlt className="w-6 h-6 text-[#fff]" />
+                  <div className="w-9 h-9 bg-[#ffb400] rounded-full flex items-center justify-center mr-3">
+                    <FaMapMarkerAlt className="w-6 h-6 text-[#2b2b2b]" />
                   </div>
                 </div>
                 <div className="flex items-center text-[#7b7b7b] dark:text-[#e2e8f0] justify-between mb-2">
-                  <p className="font-medium sm:font-semibold text-lg">Country:</p>
+                  <p className="font-medium sm:font-semibold text-lg">
+                    Country:
+                  </p>
                   <p className="text-[13px] sm:text-base break-all">Nigeria</p>
                 </div>
                 <div className="flex items-center text-[#7b7b7b] dark:text-[#e2e8f0] justify-between">
@@ -173,8 +177,8 @@ const Contact = () => {
               </div>
               <div className=" max-w-[250px] sm:max-w-xs bg-white p-3  sm:p-5 shadow-2xl">
                 <div className=" flex justify-center items-center mb-5">
-                  <div className="w-9 h-9 bg-blue-500 rounded-full flex items-center justify-center mr-3">
-                    <FaEnvelope className="w-6 h-6 text-[#fff]" />
+                  <div className="w-9 h-9 bg-[#ffb400] rounded-full flex items-center justify-center mr-3">
+                    <FaEnvelope className="w-6 h-6 text-[#2b2b2b]" />
                   </div>
                 </div>
                 <div className="flex items-center text-[#7b7b7b] dark:text-[#e2e8f0] justify-between mb-2">
@@ -184,19 +188,14 @@ const Contact = () => {
                   </p>
                 </div>
                 <div className="flex items-center text-[#7b7b7b] dark:text-[#e2e8f0] justify-between mb-2">
-                  <p className="font-medium sm:font-semibold text-lg ">Twitter:</p>
+                  <p className="font-medium sm:font-semibold text-lg ">
+                    Twitter:
+                  </p>
                   <p className="text-[13px] sm:text-base break-all">
                     @Destiny_Chilaka
                   </p>
                 </div>
-                <div className="flex items-center text-[#7b7b7b] dark:text-[#e2e8f0] justify-between gap-2 mb-2">
-                  <p className="font-medium sm:font-semibold text-lg">Telegram:</p>
-                  <p className="text-blue-400 text-[13px] sm:text-base break-all">
-                    <a href="https://t.me/Chilaka_Destiny">
-                       Destiny_Chilaka
-                    </a>
-                  </p>
-                </div>
+                
                 <div className="flex items-center text-[#7b7b7b] dark:text-[#e2e8f0] justify-between gap-2 ">
                   <p className="font-medium sm:font-semibold ">WhatsApp:</p>
                   <p className="text-[13px] sm:text-base break-all">

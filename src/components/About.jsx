@@ -28,11 +28,11 @@ const About = () => {
           </h4>
           <div className="mt-4 space-y-4">
             <div>
-              <p className="font-medium text-gray-800 mb-1">
+              <p className="font-semibold text-gray-800 dark:text-[#e2e8f0] mb-1">
                 Junior Front-end Developer at Acceleratez Ventures
               </p>
               <p className="text-sm">
-                <span className="bg-orange-400 text-white px-2 py-1 rounded">
+                <span className="bg-orange-400 dark:bg-[#ffb400] text-white px-2 py-1 rounded">
                   February 2025 – Present
                 </span>
               </p>
@@ -43,11 +43,11 @@ const About = () => {
               </p>
             </div>
             <div>
-              <p className="font-medium text-gray-800 mb-1">
+              <p className="font-semibold text-gray-800 dark:text-[#e2e8f0] mb-1">
                 Front-end Developer at CTSC (Cracking The Style Code)
               </p>
               <p className="text-sm">
-                <span className="bg-orange-400 text-white px-2 py-1 rounded">
+                <span className="bg-orange-400 dark:bg-[#ffb400] text-white px-2 py-1 rounded">
                   April 2024 – May 2024
                 </span>
               </p>
@@ -66,12 +66,12 @@ const About = () => {
             Education
           </h4>
           <div className="mt-4">
-            <p className="font-medium text-gray-800 mb-1">
+            <p className="font-semibold text-gray-800 dark:text-[#e2e8f0] mb-1">
               Bachelor of Computer Engineering, University of Uyo, Akwa Ibom,
               Nigeria
             </p>
             <p className="text-sm">
-              <span className="bg-orange-400 text-white px-2 py-1 rounded">
+              <span className="bg-orange-400 dark:bg-[#ffb400]  text-white px-2 py-1 rounded">
                 2021 – 2026 (Expected)
               </span>
             </p>
