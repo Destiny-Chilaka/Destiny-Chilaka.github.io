@@ -23,3 +23,14 @@ dist-ssr
 *.sln
 *.sw?
 .qodo
+
+"These are the steps to update the Destiny-Chilaka.github.io repository:
+# Make and test changes locally
+npm run dev  # Optional: Preview changes
+# Commit changes to main branch
+git add .
+git commit -m "Update site with new changes"
+git push origin main
+# Build and deploy to gh-pages
+npm run build
+npx gh-pages -d dist"
