@@ -1,5 +1,6 @@
 // src/components/Portfolio.jsx
 import Ecommerce from "../assets/img/exclusive-ecommerce.png";
+import Movich from "../assets/img/movich.png";
 import foodRuiners from "../assets/img/food-ruiners.png";
 import inkCartridges from "../assets/img/ink-cartridges.png";
 import modeva from "../assets/img/modeva.png";
@@ -15,6 +16,14 @@ const Portfolio = () => {
       technologies: "Vue.Js, Tailwind CSS",
       link: "https://exclusive-ecommerce-taupe.vercel.app/",
       image: Ecommerce,
+    },
+    {
+      title: "Movie Info Website",
+      description:
+        "This is a movie info website built with React.js and Tailwind CSS. It fetches data from an API to display movie information.",
+      technologies: "React.Js, Tailwind CSS",
+      link: "https://mov-ich.vercel.app/",
+      image: Movich,
     },
     {
       title: "Lead Capture Form",

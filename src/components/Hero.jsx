@@ -34,6 +34,12 @@ const Hero = () => {
           className="mt-6 bg-[#FFB400] flex items-center gap-3 py-4 px-6 rounded hover:text-xl   hover:scale-105 transform transition-transform duration-300 text-lg text-black hover:text-white"
           onMouseEnter={() => setHovered(true)}
           onMouseLeave={() => setHovered(false)}
+          onClick={() => {
+            const contactSection = document.getElementById("contact");
+            if (contactSection) {
+              contactSection.scrollIntoView({ behavior: "smooth" });
+            }
+          }}
         >
           <span>HIRE ME</span>
           {hovered ? (
